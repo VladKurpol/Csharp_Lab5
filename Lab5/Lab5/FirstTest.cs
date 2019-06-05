@@ -15,7 +15,7 @@ namespace Lab5
         public int Classroom { get => classroom; set => classroom = value; }
         public string Student_name { get => student_name; set => student_name = value; }
         public string Teacher_name { get => teacher_name; set => teacher_name = value; }
-        public int Mark { get => mark; set => mark = value >= 18 && value <= 75 ? value : 18; }
+        public int Mark { get => mark; set => mark = value; }
 
         public FirstTest(string subject, int classroom, string student_name, string teacher_name, int mark)
         {
@@ -33,6 +33,12 @@ namespace Lab5
         public void Output_first_test()
         {
             Console.WriteLine("\nSubject: " + Subject + "\nClassroom: " + Classroom + "\nStudent`s name: " + Student_name + "\nTeacher`s name: " + Teacher_name + "\nMark: " + Mark);
+        }
+        public void Edit_FirstTest()
+        {
+            Console.Clear();
+            Console.WriteLine("Change the mark of a student:\n");
+            Mark = Convert.ToInt32(Console.ReadLine());
         }
     }
 }

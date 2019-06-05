@@ -23,6 +23,12 @@ namespace Lab5
         {
             Console.WriteLine("\nTotal score: " + Total_score);
         }
+        public void Edit_LastExam()
+        {
+            Console.Clear();
+            Console.WriteLine("Change the total score:\n");
+            Total_score = Convert.ToInt32(Console.ReadLine());
+        }
     }
 
 }

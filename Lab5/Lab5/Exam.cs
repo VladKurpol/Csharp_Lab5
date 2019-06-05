@@ -23,5 +23,11 @@ namespace Lab5
         {
             Console.WriteLine("\nCorrect answers: " + Correct_answers);
         }
+        public void Edit_Exam()
+        {
+            Console.Clear();
+            Console.WriteLine("Change the number of correct answers:\n");
+            Correct_answers = Convert.ToInt32(Console.ReadLine());
+        }
     }
 }
